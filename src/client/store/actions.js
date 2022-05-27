@@ -3,6 +3,7 @@
  */
 
 export const SET_SORT_METHOD = 'SET_SORT_METHOD';
+export const PRICE_OFFERS_LOADED = 'PRICE_OFFERS_LOADED';
 
 /**
  * Supporting constants
@@ -24,4 +25,10 @@ export function setSortMethod(property) {
       property,
     },
   };
+}
+
+export function priceOffersLoadedAction(prices) {
+  return {
+    type: PRICE_OFFERS_LOADED
+  }
 }

@@ -8,7 +8,8 @@ const mapStateToProps = state => {
   }
 };
 
-const mapDispatchToProps = {
-};
+const mapDispatchToProps = dispatch => ({
+  setPriceOffers: prices => dispatch(prices)
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(CarList);

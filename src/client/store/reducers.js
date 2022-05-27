@@ -1,8 +1,14 @@
 import { combineReducers } from 'redux';
 
-// this is a no-op reducer
-export function cars(state = [], action) {
-  return state;
+function mergePricesWithCars(cars = [], prices = []) {
+  return cars.map(car => car);
+}
+
+export function cars(state = [], action = {}) {
+  switch(action.type) {
+    default:
+      return mergePricesWithCars(state);
+  }
 }
 
 export function sortMethod(state, action) {

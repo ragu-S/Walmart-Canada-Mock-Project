@@ -10,13 +10,6 @@
   width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
-  .car {
-    width: calc(25% - 10px);
-    margin-left: 10px;
-  }
-}
-
 .car.unavailable {
   background: #ddd;
   color: #888;

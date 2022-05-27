@@ -9,8 +9,9 @@ const sortMethodMap = {
   [SortMethods.NAME]: 'name',
 };
 
-function CarList({ cars, limit, sortMethod }) {
+function CarList({ cars, limit, sortMethod, setPriceOffers }) {
   const mappedSortMethod = sortMethodMap[sortMethod];
+
   const sortCars = function(a, b) {
     return (a[mappedSortMethod] > b[mappedSortMethod]) ? 1 : -1;
   }
